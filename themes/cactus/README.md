@@ -8,51 +8,52 @@ A responsive, clean and simple [Hexo](http://hexo.io) theme for a personal websi
 
 ## Summary
 
-- [General](#general)
-- [Features](#features)
-- [Install](#install)
-- [Configuration](#configuration)
-- [License](#license)
+* [General](#general)
+* [Features](#features)
+* [Install](#install)
+* [Configuration](#configuration)
+* [License](#license)
 
 ## General
 
-- **Version** : 3.0
-- **Compatibility** : Hexo 3 or later
+* **Version** : 3.0
+* **Compatibility** : Hexo 3 or later
 
 ## Features
 
-- Fully responsive
-- Multiple color schemes
-- Pick your own code highlighting scheme
-- Configurable navigation menu
-- Support for local search
-- Projects list
-- I18n support
-- Disqus integration
-- Google analytics
-- Font Awesome icons
-- Simplicity
+* Fully responsive
+* Multiple color schemes
+* Pick your own code highlighting scheme
+* Configurable navigation menu
+* Support for local search
+* Projects list
+* I18n support
+* Disqus integration
+* Google analytics
+* Font Awesome icons
+* Simplicity
 
 ## Install
-1. In the `root` directory:
+
+1.  In the `root` directory:
 
     ```git
     $ git clone https://github.com/probberechts/hexo-theme-cactus.git themes/cactus
     ```
 
-2. Change the `theme` property in the `config.yml` file.
+2.  Change the `theme` property in the `config.yml` file.
 
     ```yml
     # theme: landscape
     theme: cactus
     ```
 
-3. Run: `hexo generate` and `hexo server`
-
+3.  Run: `hexo generate` and `hexo server`
 
 ## Configuration
+
 You can (and should) modify a couple of settings. An overview of all settings
-can be found in  [_config.yml](_config.yml). The most important ones are
+can be found in [\_config.yml](_config.yml). The most important ones are
 discussed below.
 
 There are two possible methods to override these variables. As a first option,
@@ -67,14 +68,12 @@ theme_config:
   colorscheme: white
 ```
 
-
 ```yml
 # themes/cactus/_config.yml
-colorscheme: dark 
+colorscheme: dark
 ```
 
 This will result in the white color scheme.
-
 
 ### Color scheme
 
@@ -88,7 +87,6 @@ colorscheme: light
 Alternatively, you can easily create your own color scheme by creating a new
 file in `source/css/_colors`.
 
-
 ### Navigation
 
 Setup the navigation menu in the `_config.yml`:
@@ -98,30 +96,28 @@ nav:
   Home: /
   About: /about/
   Writing: /archives/
-  Projects: http://github.com/probberechts
+  Projects: http://github.com/eperedo
   LINK_NAME: URL
 ```
-
 
 ### Blog posts list on home page
 
 You have two options for the list of blog posts on the home page:
 
-  - Show only the 5 most recent posts (default)
+* Show only the 5 most recent posts (default)
 
-    ```yml
-    posts_overview:
-      show_all_posts: false
-      post_count: 5
-    ```
+  ```yml
+  posts_overview:
+    show_all_posts: false
+    post_count: 5
+  ```
 
-  - Show all posts 
+* Show all posts
 
-    ```yml
-    posts_overview:
-      show_all_posts: true
-    ```
-
+  ```yml
+  posts_overview:
+    show_all_posts: true
+  ```
 
 ### Projects list
 
@@ -129,19 +125,18 @@ Create a projects file `source/_data/projects.json` to show a list of your proje
 
 ```json
 [
-    {
-       "name":"Hexo",
-       "url":"https://hexo.io/",
-       "desc":"A fast, simple & powerful blog framework"
-    },
-    {
-       "name":"Font Awesome",
-       "url":"http://fontawesome.io/",
-       "desc":"The iconic font and CSS toolkit"
-    }
+	{
+		"name": "Hexo",
+		"url": "https://hexo.io/",
+		"desc": "A fast, simple & powerful blog framework"
+	},
+	{
+		"name": "Font Awesome",
+		"url": "http://fontawesome.io/",
+		"desc": "The iconic font and CSS toolkit"
+	}
 ]
 ```
-
 
 ### Social media links
 
@@ -157,50 +152,46 @@ social_links:
 
 where `NAME` is the name of a [Font Awesome icon](https://fontawesome.com/icons?d=gallery&s=brands).
 
-
 ### Language configuration
 
-If you are new to Hexo and internationalization (i18n), please read 
+If you are new to Hexo and internationalization (i18n), please read
 [Hexo documentation - internationalization (i18n) section](https://hexo.io/docs/internationalization.html)
 
 Currently, the theme is delivered with support for:
 
-- English (en), default
-- Chinese (Simplified, PRC) (zh-CN)
-- French (fr)
-- Dutch (nl)
+* English (en), default
+* Chinese (Simplified, PRC) (zh-CN)
+* French (fr)
+* Dutch (nl)
 
 If you would like to use one the languages listed above, simply set `language`
 to the desired language (e.g., `fr`) in `_config.yml`.
-Otherwise, you can follow the steps below (E.g., to add a Japanese (ja) translation): 
+Otherwise, you can follow the steps below (E.g., to add a Japanese (ja) translation):
 
-1. Set `language` to `ja` in Hexo configuration file `_config.yml`  
-2. Create a `ja.yml` file in the `themes/cactus/languages/` folder  
-3. Copy the content of `themes/cactus/languages/default.yml` and paste it it into the `ja.yml` file  
-4. Replace all English strings by their Japanese translation
+1.  Set `language` to `ja` in Hexo configuration file `_config.yml`
+2.  Create a `ja.yml` file in the `themes/cactus/languages/` folder
+3.  Copy the content of `themes/cactus/languages/default.yml` and paste it it into the `ja.yml` file
+4.  Replace all English strings by their Japanese translation
 
 **Note: Cactus does not support multi-language sites.**
-
 
 ### RSS
 
 Set the `rss` field in the `_config.yml` to one of the following values:
 
-1. `rss: false` will totally disable rss (default).
-2. `rss: atom.xml` sets a specific feed link.
-3. `rss:`leave empty to use the [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) plugin. 
-
+1.  `rss: false` will totally disable rss (default).
+2.  `rss: atom.xml` sets a specific feed link.
+3.  `rss:`leave empty to use the [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) plugin.
 
 ### Analytics
 
 Add you Google Analytics `tracking_id` to the `_config.yml`.
 
 ```yml
-gooogle_analytics: 
+gooogle_analytics:
   enable: true
   id: 'UA-49627206-1'
 ```
-
 
 ### Comments
 
@@ -216,7 +207,6 @@ disqus:
 
 where `SITENAME` is the name you gave your site on Disqus.
 
-
 ### Code Highlighting
 
 Pick one of [the available colorschemes](https://github.com/probberechts/hexo-theme-cactus/tree/master/source/css/_highlight) and add it to the `_config.yml`:
@@ -225,10 +215,9 @@ Pick one of [the available colorschemes](https://github.com/probberechts/hexo-th
 highlight: COLORSCHEME_NAME
 ```
 
-
 ### Local search
 
-First, install the [hexo-generate-search](https://www.npmjs.com/package/hexo-generator-search) 
+First, install the [hexo-generate-search](https://www.npmjs.com/package/hexo-generator-search)
 plugin, which will generate a search index file.
 
 ```git
@@ -237,9 +226,10 @@ $ npm install hexo-generator-search --save
 
 Next, create a page to display the search engine:
 
-```sh 
+```sh
 $ hexo new page Search
 ```
+
 and put `search: true` in the front-matter.
 
 Finally, edit the `_config.yml` and add a link to the navigation menu.
@@ -249,6 +239,6 @@ nav:
   search: /Search/
 ```
 
-
 ## License
+
 MIT

@@ -1,0 +1,17 @@
+[
+	{
+		"name": "vue-static-map",
+		"url": "https://github.com/eperedo/vue-static-map",
+		"desc": "a simple component to generate an static google map"
+	},
+	{
+		"name": "v-toggle",
+		"url": "https://github.com/eperedo/vue-toggle",
+		"desc": "a simple vue toggle component"
+	},
+	{
+		"name": "vue-64",
+		"url": "https://github.com/eperedo/vue-64",
+		"desc": "vue component which generate base64 from a file"
+	}
+]

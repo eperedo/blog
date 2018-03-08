@@ -78,3 +78,11 @@ theme: cactus
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+# Cactus
+nav:
+  Home: /
+  About: /about/
+  Writing: /archives/
+  Projects: http://github.com/eperedo
+  LINK_NAME: URL
