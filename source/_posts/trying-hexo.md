@@ -1,6 +1,5 @@
 ---
 title: Trying hexo
-subtitle: what
 ---
 
 So... my old blog is down because it was hosted on the servers of my old job 🙊 and since that company does not exists anymore and you can guess what happen to my blog.
@@ -76,6 +75,6 @@ Ok, time to lunch the local server again using the **server** command and everyt
 
 ### Writing posts
 
-Since the whole point of playing with hexo was having a blog I can now start writing posts. So easy I only have to add new markdown files into the **souce/\_post** folder and that's it.
+Since the whole point of playing with hexo was having a blog I can now start writing posts. So easy I only have to add a new markdown file into the **souce/\_post** folder and that's it.
 
-I am pretty happy with hexo so far, do not be like and read the [documentation](https://hexo.io/docs) if you have any doubts.
+I am pretty happy with hexo so far, do not be like me and read the [documentation](https://hexo.io/docs) if you have any doubts.
