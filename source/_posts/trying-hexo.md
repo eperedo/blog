@@ -1,5 +1,6 @@
 ---
 title: Trying hexo
+date: 2018-02-07 22:58:00
 ---
 
 So... my old blog is down because it was hosted on the servers of my old job 🙊 and since that company does not exists anymore and you can guess what happen to my blog.

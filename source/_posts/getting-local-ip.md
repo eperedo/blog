@@ -1,5 +1,6 @@
 ---
 title: Getting my local ip
+date: 2018-02-08 22:58:00
 ---
 
 Sometimes I need to know my local IP address, so easy, right?

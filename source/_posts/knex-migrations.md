@@ -1,5 +1,6 @@
 ---
 title: Sql migrations using Knex
+date: 2018-03-08 22:58:00
 ---
 
 I need two tables for my next app. **ft_ticket_types** and **ft_tickets**.
