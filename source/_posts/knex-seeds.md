@@ -47,6 +47,6 @@ Ran 1 seed files
 
 If I go to adminer - Yeah I love adminer! ❤️ - I can see my data there.
 
-![knex seeds](https://s3.amazonaws.com/blog/knex-migrations/seed-example.png)
+![knex seeds](https://res.cloudinary.com/drukp4ipu/image/upload/v1520784659/blog/seed-example.png)
 
 I can go to sleep now 😴

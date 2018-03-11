@@ -101,7 +101,7 @@ Batch 1 run: 1 migrations
 
 If I go to my adminer website I can see my new table.
 
-![knex migration](https://s3.amazonaws.com/blog/knex-migrations/first-migration.png)
+![knex migration](https://res.cloudinary.com/drukp4ipu/image/upload/v1520784659/blog/first-migration.png)
 
 Also two extra tables knex use to know what migrations are already executed.
 

@@ -62,6 +62,6 @@ Batch 2 run: 1 migrations
 
 To the adminer cave!
 
-![Foreign Key with knex](https://s3.amazonaws.com/blog/knex-migrations/foreign-key-knex.png)
+![Foreign Key with knex](https://res.cloudinary.com/drukp4ipu/image/upload/v1520784660/blog/foreign-key-knex.png)
 
 Another great day thanks to [knex](http://knexjs.org)

@@ -37,7 +37,7 @@ Yes! I call my new project blog! Do not judge me! Once the new command has finis
 
 From this point looks like you can change the configuration of your hexo site in the **config.yml**
 file.
-![hexo config](https://s3.amazonaws.com/blog/trying-hexo/hexo-config.png)
+![hexo config](https://res.cloudinary.com/drukp4ipu/image/upload/v1520784659/blog/hexo-config.png)
 
 I did a few changes, like the title, subtitle, description and timezone. Yes I am from Perú 🇵🇪
 
