@@ -1,6 +1,6 @@
 ---
 title: Relationships in objection.js
-date: 2018-03-12 22:58:00
+date: 2018-03-12 21:00:00
 ---
 
 Now I need a list of tickets but including the information of their type. Looks like it is a work for the **eager** method.
