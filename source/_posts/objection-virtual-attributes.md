@@ -8,7 +8,7 @@ I can easily add a new field and generate the value according the rule I want bu
 
 ### Virtual Attributes
 
-[Objections](https://vincit.github.io/objection.js) allows me to generate any extra field according the values of a Model. This means I can generate a new field called `isFirst` and it will be generated dinamically by objection.
+[Objection.js](https://vincit.github.io/objection.js) allows me to generate any extra field according the values of a Model. This means I can generate a new field called `isFirst` and it will be generated dinamically by objection.
 
 First I need to use the [virtualAttributes](https://vincit.github.io/objection.js/#virtualattributes) method, it must return an array with the names of the fields I want to add to my results.
 

@@ -13,7 +13,7 @@ According to their website:
 Objection.js is built on an SQL query builder called knex. All databases supported by knex are supported by objection.js. SQLite3, Postgres and MySQL are thoroughly tested.
 ```
 
-Basically I can define classes and use Objection to map that classes to a table. Objection gives me a lot of great methods who allows me to interact with the database and make simple/complex SQL queries in a clean way.
+Basically I can define classes and use [Objection.js](https://vincit.github.io/objection.js) to map that classes to a table. Objection gives me a lot of great methods who allows me to interact with the database and make simple/complex SQL queries in a clean way.
 
 ### Installation
 

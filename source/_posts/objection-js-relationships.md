@@ -7,7 +7,7 @@ Now I need a list of tickets but including the information of their type. Looks 
 
 ### Define Relations in Objection
 
-First I need to tell objection how my tables are related. For this I need to use the **relationMappings**
+First I need to tell [Objection.js](https://vincit.github.io/objection.js) how my tables are related. For this I need to use the **relationMappings**
 method who will need an object with the definition of all my relationships.
 In this case I only need one relationship since a ticket has one type.
 
