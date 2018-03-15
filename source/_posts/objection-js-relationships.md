@@ -19,7 +19,7 @@ class Ticket extends Model {
 		return 'ft_tickets';
 	}
 
-	static relationMappings() {
+	static get relationMappings() {
 		return {
 			type: {
 				relation: Model.HasOneRelation,
