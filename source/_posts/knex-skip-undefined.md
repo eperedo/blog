@@ -1,5 +1,5 @@
 ---
-title: Virtual Attributes in objection.js
+title: SkipUndefined in objection.js
 date: 2018-03-15 22:30:00
 ---
 
