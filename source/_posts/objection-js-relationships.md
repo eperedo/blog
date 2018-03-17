@@ -3,7 +3,7 @@ title: Relationships in objection.js
 date: 2018-03-12 21:00:00
 ---
 
-Now I need a list of tickets but including the information of their type. Looks like it is a work for the **eager** method.
+Now [I need a list of tickets](https://blog.eperedo.com/2018/03/12/objection-orm/) but including the information of their type. Looks like it is a work for the **eager** method.
 
 ### Define Relations in Objection
 

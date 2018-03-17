@@ -3,7 +3,7 @@ title: Virtual Attributes in objection.js
 date: 2018-03-14 21:10:00
 ---
 
-I need generate an extra field for every ticket I have. This new field will be a boolean indicating true if the number is 1 and false in any other value.
+I need generate an extra field [for every ticket I have](https://blog.eperedo.com/2018/03/13/objection-js-relationships/). This new field will be a boolean indicating true if the number is 1 and false in any other value.
 I can easily add a new field and generate the value according the rule I want but it's kind silly to have an extra field in the table just for this flag.
 
 ### Virtual Attributes
