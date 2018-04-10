@@ -1,5 +1,5 @@
 ---
-title: Graphql: Qué, Por qué, Cuando y Cómo?
+title: Graphql - Qué, Por qué, Cuando y Cómo?
 date: 2018-04-09 23:00:00
 ---
 
