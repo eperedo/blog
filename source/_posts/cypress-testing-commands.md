@@ -1,6 +1,6 @@
 ---
 title: Custom Commands en Cypress
-date: 2018-09-22 23:00:00
+date: 2018-09-24 23:00:00
 ---
 
 Revisando las [pruebas que escribí](https://blog.eperedo.com/2018/09/23/cypress-testing/) me doy cuenta que estoy repitiendo una cantidad absurda de código y se siente un poco mal. Fácil podría extraer el código que se repite en una función, pero revisando la documentación de cypress ya existe una forma de hacerlo a la cypress.
