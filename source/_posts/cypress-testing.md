@@ -196,3 +196,5 @@ Listo, una funcionalidad de mi aplicación totalmente automatizada.
 ### Desventajas
 
 1. Solo se puede probar en Chrome 😭
+
+Repo con el código e instrucciones: https://github.com/eperedo/cypress-learning
