@@ -5,7 +5,7 @@
 # Link to a page that gives an overview of all your projects.
 # This can be an external link (e.g., to you GitHub profile) or to another
 # page within your website.
-projects_url: http://github.com/eperedo
+projects_url: https://github.com/eperedo
 
 # Configure the navigation menu.
 # A pair 'Key: url' will result in a link to 'url' with the name 'Key' in the
@@ -13,10 +13,8 @@ projects_url: http://github.com/eperedo
 # languages/*.yml
 nav:
   home: /
-  about: /about/
+  about: https://portfolio.eperedo.com
   articles: /archives/
-  projects: projects_url
-
 
 # Links to your social media accounts.
 # The keys should correspond to Fontawesome icon names
@@ -27,7 +25,6 @@ social_links:
   twitter: /eperedo
   mail: mailto:edriverop@gmail.com
 
-
 # Customize the overview with the most recent blog posts on the index page.
 # Options:
 #   - show_all_posts: whether to show all available posts.
@@ -35,7 +32,6 @@ social_links:
 posts_overview:
   show_all_posts: false
   post_count: 5
-
 
 ##############################################################################
 # Look and Feel
@@ -87,7 +83,6 @@ colorscheme: dark
 # Maximal width of the page in rem units.
 page_width: 48
 
-
 ##############################################################################
 # Miscellaneous
 ##############################################################################
@@ -101,7 +96,6 @@ open_graph:
   fb_admins:
   twitter_id:
   google_plus:
-
 
 ##############################################################################
 # Plugins
