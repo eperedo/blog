@@ -16,14 +16,22 @@ import Link from "next/link";
 function Home() {
   return (
     <div>
-      <Link href="/about">Home</Link>
-      <Link href="/about">About</Link>
+      <Link href="/about">
+        <a>Home</a>
+      </Link>
+      <Link href="/about">
+        <a>Home</a>
+      </Link>
 
       <h1>Welcome to my App!</h1>
     </div>
   );
 }
 ```
+
+Note that the **Link** component is just a wrapper which provide you client side transitions between
+your pages, that's why I am putting an **<a />** tag inside of it.
+If you open your browser at http://localhost:3000 you can easily navigate between them.
 
 ### Prefetching
 
