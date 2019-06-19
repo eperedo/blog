@@ -29,7 +29,7 @@ function Home() {
 }
 ```
 
-Note that the **Link** component is just a wrapper which provide you client side transitions between your pages, that's why I am putting an **<a />** tag inside of it.
+Note that the **Link** component is just a wrapper which provide you client side transitions between your pages, that's why I am putting an **"a"** tag inside of it.
 If you open your browser at http://localhost:3000 you can easily navigate between them.
 
 ### Prefetching
