@@ -3,7 +3,7 @@ title: Learning Next - Day 3
 date: 2019-06-20 18:00:00
 ---
 
-Now that you can [create your own pages] https://blog.eperedo.com/2019/06/16/learning-next-day-one/) in next you certainly will need a way
+Now that you can [create your own pages](https://blog.eperedo.com/2019/06/16/learning-next-day-one/) in next you certainly will need a way
 to navigate between them without writing the url directly in your browser.
 
 For that purpose the next framework has built in a component called **Link**.
