@@ -61,14 +61,16 @@ First you create a custom button component and you accept and **ID prop** and ac
 ```jsx
 
 function CustomButton({ children, id }) {
-  <button>
+  return (
+    <button>
      { children }
      <style jsx>{`
         button {
-          background: ${id > 5 'red' : 'green'};
+          background: ${id > 5 ? 'red' : 'green'};
         }
      `}</style>
-  </button>
+    </button>
+  );
 }
 
 ```
@@ -84,12 +86,12 @@ function Home({ users }) {
     <div>
       <h1>Users</h1>
       {users.map(user => (
-        <div>
-          <p key={user.id}>{user.name}</p>
+        <div key={user.id}>
+          <p>{user.name}</p>
           <CustomButtom id={user.id}>Click Me</CustomButtom >
         </div>
       ))}
-      <style jsx>{`
+      <style global jsx>{`
         p {
           color: blue;
         }
