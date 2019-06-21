@@ -1,5 +1,5 @@
 ---
-title: Learning Next - Day 3
+title: Learning NextJs - Day 3
 date: 2019-06-20 18:00:00
 ---
 
