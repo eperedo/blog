@@ -10,7 +10,7 @@ In order to get started with next you need to install the latest version of thre
 3. React-Dom
 
 ```bash
-npm install nextjs react react-dom
+npm install next react react-dom
 ```
 
 Once the installation is finished you will need a package.json file. You can easily create one
