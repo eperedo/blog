@@ -1,5 +1,5 @@
 ---
-title: Learning Next - Day 1
+title: Learning NextJs - Day 1
 date: 2019-06-16 15:00:00
 ---
 
@@ -10,7 +10,7 @@ In order to get started with next you need to install the latest version of thre
 3. React-Dom
 
 ```bash
-npm install next react react-dom
+npm install nextjs react react-dom
 ```
 
 Once the installation is finished you will need a package.json file. You can easily create one
