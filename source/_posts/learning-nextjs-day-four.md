@@ -1,7 +1,11 @@
+---
+title: Learning NextJs - Day 4
+date: 2019-06-21 09:00:00
+---
+
 You can add css to your pages components using [styled-jsx](https://github.com/zeit/styled-jsx) and since the creators of this library are the same than next you can use it without write a single line of configuration.
 
 You will need the special **style jsx** component inside of your pages.
-
 
 ```jsx
 function Home({ users }) {
@@ -59,27 +63,24 @@ a button for every user and if the ID of the user is greater than 5 the button b
 First you create a custom button component and you accept and **ID prop** and according to that writing a simple ternary you can make the crazy request.
 
 ```jsx
-
 function CustomButton({ children, id }) {
   return (
     <button>
-     { children }
-     <style jsx>{`
+      {children}
+      <style jsx>{`
         button {
-          background: ${id > 5 ? 'red' : 'green'};
+          background: ${id > 5 ? "red" : "green"};
         }
-     `}</style>
+      `}</style>
     </button>
   );
 }
-
 ```
 
 Now in your home page just import the component
 
 ```jsx
-
-import CustomButtom from './../components/CustomButtom';
+import CustomButtom from "./../components/CustomButtom";
 
 function Home({ users }) {
   return (
@@ -88,7 +89,7 @@ function Home({ users }) {
       {users.map(user => (
         <div key={user.id}>
           <p>{user.name}</p>
-          <CustomButtom id={user.id}>Click Me</CustomButtom >
+          <CustomButtom id={user.id}>Click Me</CustomButtom>
         </div>
       ))}
       <style global jsx>{`
