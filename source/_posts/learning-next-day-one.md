@@ -69,7 +69,7 @@ But what about the root url (/) how we can create content for that page? Easy, i
 // pages/Index.js
 
 function Home() {
-  <h1>Welcome to my App!</h1>;
+  return <h1>Welcome to my App!</h1>;
 }
 
 export default Home;
