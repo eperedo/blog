@@ -20,13 +20,15 @@ function Home() {
         <a>Home</a>
       </Link>
       <Link href="/about">
-        <a>Home</a>
+        <a>About</a>
       </Link>
 
       <h1>Welcome to my App!</h1>
     </div>
   );
 }
+
+export default Home;
 ```
 
 Note that the **Link** component is just a wrapper which provide you client side transitions between your pages, that's why I am putting an **"a"** tag inside of it.
