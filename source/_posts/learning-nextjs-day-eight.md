@@ -1,9 +1,9 @@
 ---
 title: Learning NextJs - Day 8
-date: 2019-06-26 21:00:00
+date: 2019-06-27 19:00:00
 ---
 
-You can easily add alias to your pages, but now the 404 problem happen every time you refresh the page.
+You can [easily add alias to your pages](https://blog.eperedo.com/2019/06/25/learning-nextjs-day-seven/), but now the 404 problem happen every time you refresh the page.
 In order to solve this you need to create a custom server, I know! sounds scary, but actually is not because nextjs is a node web server.
 
 This means integrate it with express, hapijs, fastify, or any other node server is really easy. They are plenty of examples how to do this in [their docs](https://nextjs.org/docs#custom-server-and-routing).
@@ -35,12 +35,6 @@ const server = Hapi.Server({
 });
 
 (async () => {
-  server.route({
-    handler: () => "Hello World",
-    method: "/GET",
-    path: "/"
-  });
-
   await server.start();
   console.log(`Server is running at ${server.info.uri}`);
 })();
@@ -108,10 +102,9 @@ const { defaultHandlerWrapper } = require("./nextWrapper");
 })();
 ```
 
-The **defaultHandlerWrapper** method is the responsible for process all the request to our hapijs server and make the magic that by default next do.
+The **defaultHandlerWrapper** method is the responsible for process all the request to our hapijs server and make the magic that by default nextjs does.
 
-But in order to make all the work that normally next does, it creates a lot of stuff behind the courtains on a **\_next** folder. That means we need another route in our hapijs server. For this case we are going to use
-the **nextHandlerWrapper** method of the **nextWrapper.js** file.
+Nextjs create a lot of stuff behind the courtains on a **\_next** folder. That means we need another route in our hapijs server. For this case we are going to use the **nextHandlerWrapper** method of the **nextWrapper.js** file.
 
 ```js
 // other lines of code omitted
