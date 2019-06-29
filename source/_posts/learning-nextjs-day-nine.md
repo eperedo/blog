@@ -1,3 +1,8 @@
+---
+title: Learning NextJs - Day 9
+date: 2019-06-29 17:51:00
+---
+
 NextJs by default allows you to bring your own static files (js, css, images, json, etc) without any extra configuration.
 In order to do that you need an **"static"** folder inside your project.
 
