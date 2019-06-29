@@ -101,7 +101,7 @@ pwa:
       networkTimeoutSeconds: 5
     routes:
       - pattern: !!js/regexp /blog.eperedo.com/
-        strategy: cacheFirst
+        strategy: networkFirst
       - pattern: !!js/regexp /.*\.(js|css|jpg|jpeg|png|gif)$/
         strategy: cacheFirst
       - pattern: !!js/regexp /\//
