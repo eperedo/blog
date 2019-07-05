@@ -1,6 +1,6 @@
 ---
 title: Building Websites with React and GatsbyJs
-date: 2018-07-04 21:38:00
+date: 2019-07-04 21:38:00
 ---
 
 Creating a gatsby project is easy since you can use their wonderful CLI.
