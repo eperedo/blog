@@ -18,7 +18,7 @@ If you open the project that we create in the previous post you will see a folde
 ```
 
 In a first look is easy to assume that every time you need a new route/url in your website you need to create 
-a react component inside the **page** folder.
+a react component inside the **pages** folder.
 
 If you open the **index.js** you can see a simple React component, actually a FUNCTION component.
 
@@ -103,10 +103,10 @@ export default Customers;
 ```
 
 Let's go through this component, first we create an array called **data**, this array will contain the information about 3 people. 
-The data was taken from the [reqres.in API](https://reqres.in/api/users) since we do not want to complicate things involving async requests
+The data was taken from the [reqres.in API](https://reqres.in/api/users) since we do not want to complicate things by involving async requests
 (yet!).
 After that we define a simple react component that will loop through the array and show the name, email and avatar of each customer.
-Ok with this information gatsby automatically will generate a **/customers** for us. You do not need to restart the server, just go to
+Ok with this information gatsby automatically will generate a **/customers** url for us. You do not need to restart the server, just go to
 your browser and open the following url:
 
 ```bash
@@ -229,7 +229,7 @@ in a react component.
 ### Creating and using React components in Gatsby
 
 Since Gatsby use React under the hoods we can create our UI in tiny reusable components. Let's create a component called **TheNavBar**.
-Since we do not want to gatsby turn this component into a page, let's create a folder **components** and inside of it the navbar.
+Since we do not want to gatsby turn this component into a page, let's create a folder called **components** and inside of it the navbar.
 
 Our folder structure will look like this:
 
@@ -343,7 +343,7 @@ Much cleaner and if you open your browser you will not see any change because we
 
 ### Things that we learn
 
-1. In this post we learn how gatsby turn our react components into powerfull pages.
+1. In this post we learned how gatsby turn our react components into powerfull pages.
 2. How to create a navigation bar using the Link components.
 3. How to reuse react components inside gatsby pages.
 
