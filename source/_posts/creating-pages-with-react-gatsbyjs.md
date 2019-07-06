@@ -1,4 +1,9 @@
-Now that you can [create a new gatsby project](https://blog.eperedo.com/2019/07/05/building-websites-with-react-gatsbyjs/) 
+---
+title: Creating Pages in GatsbyJs
+date: 2019-07-06 10:00:00
+---
+
+Now that you can [create a new gatsby project](https://blog.eperedo.com/2019/07/05/building-websites-with-react-gatsbyjs/)
 let's continues with a fundamental feature that gatsby has built in: **Pages**
 
 A gatsby page is just a React component, but thanks to gatsby it will generate a page in our website. This means that if you create a page
@@ -17,26 +22,24 @@ If you open the project that we create in the previous post you will see a folde
 # other files
 ```
 
-In a first look is easy to assume that every time you need a new route/url in your website you need to create 
+In a first look is easy to assume that every time you need a new route/url in your website you need to create
 a react component inside the **pages** folder.
 
 If you open the **index.js** you can see a simple React component, actually a FUNCTION component.
 
 ```jsx
-import React from "react"
+import React from "react";
 
-export default () => <div>Hello world!</div>
+export default () => <div>Hello world!</div>;
 ```
 
 I love arrow functions, but not this much so I will rewrite this component to something more fun (at least to me!)
 
 ```jsx
-import React from "react"
+import React from "react";
 
 function Index() {
-  return (
-    <div>Hello world!</div>
-  );
+  return <div>Hello world!</div>;
 }
 
 export default Index;
@@ -54,36 +57,35 @@ Let's create a website that will have two pages:
 Since the root page is already created, let's create the customers page.
 
 ```jsx
-import React from 'react';
+import React from "react";
 
 const customers = [
   {
     id: 1,
-    email: 'george.bluth@reqres.in',
-    first_name: 'George',
-    last_name: 'Bluth',
-    avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg',
+    email: "george.bluth@reqres.in",
+    first_name: "George",
+    last_name: "Bluth",
+    avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg"
   },
   {
     id: 2,
-    email: 'janet.weaver@reqres.in',
-    first_name: 'Janet',
-    last_name: 'Weaver',
-    avatar:
-      'https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg',
+    email: "janet.weaver@reqres.in",
+    first_name: "Janet",
+    last_name: "Weaver",
+    avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"
   },
   {
     id: 3,
-    email: 'emma.wong@reqres.in',
-    first_name: 'Emma',
-    last_name: 'Wong',
+    email: "emma.wong@reqres.in",
+    first_name: "Emma",
+    last_name: "Wong",
     avatar:
-      'https://s3.amazonaws.com/uifaces/faces/twitter/olegpogodaev/128.jpg',
-  },
+      "https://s3.amazonaws.com/uifaces/faces/twitter/olegpogodaev/128.jpg"
+  }
 ];
 
 function Customers() {
-  return customers.map((customer) => {
+  return customers.map(customer => {
     return (
       <section key={customer.id}>
         <img src={customer.avatar} alt={customer.first_name} />
@@ -99,10 +101,9 @@ function Customers() {
 }
 
 export default Customers;
-
 ```
 
-Let's go through this component, first we create an array called **data**, this array will contain the information about 3 people. 
+Let's go through this component, first we create an array called **data**, this array will contain the information about 3 people.
 The data was taken from the [reqres.in API](https://reqres.in/api/users) since we do not want to complicate things by involving async requests
 (yet!).
 After that we define a simple react component that will loop through the array and show the name, email and avatar of each customer.
@@ -125,9 +126,9 @@ Gatsby has a special component called **Link** and it's pretty useful to navigat
 Let's create a navigation section for our website, first in our index page.
 
 ```jsx
-import React from 'react';
+import React from "react";
 // Special Gatsby Component
-import { Link } from 'gatsby';
+import { Link } from "gatsby";
 
 function Index() {
   return (
@@ -156,33 +157,32 @@ It has a **to** prop and you need to pass the url there.
 Ok now copy the same code in the **customers** page.
 
 ```jsx
-import React from 'react';
-import { Link } from 'gatsby';
+import React from "react";
+import { Link } from "gatsby";
 
 const data = [
   {
     id: 1,
-    email: 'george.bluth@reqres.in',
-    first_name: 'George',
-    last_name: 'Bluth',
-    avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg',
+    email: "george.bluth@reqres.in",
+    first_name: "George",
+    last_name: "Bluth",
+    avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg"
   },
   {
     id: 2,
-    email: 'janet.weaver@reqres.in',
-    first_name: 'Janet',
-    last_name: 'Weaver',
-    avatar:
-      'https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg',
+    email: "janet.weaver@reqres.in",
+    first_name: "Janet",
+    last_name: "Weaver",
+    avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"
   },
   {
     id: 3,
-    email: 'emma.wong@reqres.in',
-    first_name: 'Emma',
-    last_name: 'Wong',
+    email: "emma.wong@reqres.in",
+    first_name: "Emma",
+    last_name: "Wong",
     avatar:
-      'https://s3.amazonaws.com/uifaces/faces/twitter/olegpogodaev/128.jpg',
-  },
+      "https://s3.amazonaws.com/uifaces/faces/twitter/olegpogodaev/128.jpg"
+  }
 ];
 
 function Customers() {
@@ -198,7 +198,7 @@ function Customers() {
           </li>
         </ul>
       </nav>
-      {data.map((customer) => {
+      {data.map(customer => {
         return (
           <section key={customer.id}>
             <img src={customer.avatar} alt={customer.first_name} />
@@ -243,8 +243,8 @@ src
 And our component:
 
 ```jsx
-import React from 'react';
-import { Link } from 'gatsby';
+import React from "react";
+import { Link } from "gatsby";
 
 function NavBar() {
   return (
@@ -267,8 +267,8 @@ export default NavBar;
 How we can reuse this component inside our pages? Just importing like we normally do in a react application. First our home page
 
 ```jsx
-import React from 'react';
-import NavBar from './../components/TheNavBar';
+import React from "react";
+import NavBar from "./../components/TheNavBar";
 
 function Index() {
   return (
@@ -285,40 +285,39 @@ export default Index;
 And now the **customers** page
 
 ```jsx
-import React from 'react';
-import NavBar from './../components/TheNavBar';
+import React from "react";
+import NavBar from "./../components/TheNavBar";
 
 const data = [
   {
     id: 1,
-    email: 'george.bluth@reqres.in',
-    first_name: 'George',
-    last_name: 'Bluth',
-    avatar: 'https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg',
+    email: "george.bluth@reqres.in",
+    first_name: "George",
+    last_name: "Bluth",
+    avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg"
   },
   {
     id: 2,
-    email: 'janet.weaver@reqres.in',
-    first_name: 'Janet',
-    last_name: 'Weaver',
-    avatar:
-      'https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg',
+    email: "janet.weaver@reqres.in",
+    first_name: "Janet",
+    last_name: "Weaver",
+    avatar: "https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"
   },
   {
     id: 3,
-    email: 'emma.wong@reqres.in',
-    first_name: 'Emma',
-    last_name: 'Wong',
+    email: "emma.wong@reqres.in",
+    first_name: "Emma",
+    last_name: "Wong",
     avatar:
-      'https://s3.amazonaws.com/uifaces/faces/twitter/olegpogodaev/128.jpg',
-  },
+      "https://s3.amazonaws.com/uifaces/faces/twitter/olegpogodaev/128.jpg"
+  }
 ];
 
 function Customers() {
   return (
     <section>
       <NavBar />
-      {data.map((customer) => {
+      {data.map(customer => {
         return (
           <section key={customer.id}>
             <img src={customer.avatar} alt={customer.first_name} />
@@ -336,7 +335,6 @@ function Customers() {
 }
 
 export default Customers;
-
 ```
 
 Much cleaner and if you open your browser you will not see any change because we just did a small refactor, the functionality is the same!
@@ -347,3 +345,4 @@ Much cleaner and if you open your browser you will not see any change because we
 2. How to create a navigation bar using the Link components.
 3. How to reuse react components inside gatsby pages.
 
+[Github Repo](https://github.com/eperedo/learning-gatsby/tree/gatsby-pages)
