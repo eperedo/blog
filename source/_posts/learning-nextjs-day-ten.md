@@ -36,7 +36,7 @@ npm install next@9.0.0 react react-dom
 
 Now let's create our pages folder, and inside of it the following structure to achieve our 3 routes
 
-```
+```bash
 pages
   index.js # this is going to generate the home url
   users
@@ -163,7 +163,7 @@ pages
 now our ```query``` object will have two properties: **id** and **name**
 
 ```jsx
-# /users/[id]/[name]/profile.js
+// /users/[id]/[name]/profile.js
 
 function UserProfile({ user }) {
   return (
@@ -191,7 +191,7 @@ export default UserProfile;
 And of course to get a fully example we need to change the **href** prop in our users page as well
 
 ```jsx
-# users/index.js
+// users/index.js
 import Link from 'next/link';
 
 const users = [
