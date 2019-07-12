@@ -31,7 +31,7 @@ Let's create a new nextjs app with 3 routes:
 There's nothing new in the installation process with this version, same as previous
 
 ```bash
-npm install next@9.0.0 react react-dom
+npm install next@9.0.1 react react-dom
 ```
 
 Now let's create our pages folder, and inside of it the following structure to achieve our 3 routes
@@ -48,7 +48,7 @@ Yes, is that easy! If you want to create a dynamic url you need to define the dy
 
 Ok let's create the components for each of our pages. If you are not familiar with nextjs pages you can see [an introduction here](https://blog.eperedo.com/2019/06/16/learning-next-day-one/)
 
-```jsx
+```js
 // pages/index.js
 import Link from 'next/link';
 
@@ -107,7 +107,7 @@ I am using an array of users to make code shorter, but you totally can [fetch da
 
 And now our dynamic page
 
-```jsx
+```js
 function UserProfile({ user }) {
   return (
     <h1>
