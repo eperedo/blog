@@ -1,8 +1,8 @@
-So in the middle of my learning process the team of nextjs decided to make a huge release and I am going to cover 1 of many really great features that they include in the last version:
+So in the middle of my learning process the team of nextjs decided to make a huge release and I am going to cover 1 of the many really great features that they include in the last version:
 
 ### Dynamic Routes
 
-So you probably remember that for dynamic routes in nextjs you normally need to create a custom server. - LINK A DAY 9 This can sound like something difficult to do but actually it is really simple.
+So you probably remember that for dynamic routes in nextjs you normally need to [create a custom server](https://blog.eperedo.com/2019/06/28/learning-nextjs-day-eight/). This can sound like something difficult to do but actually it is really simple.
 
 The nextjs team realized that it is a common task to do in a real web application so they decide to build this feature into the core of nextjs.
 
@@ -41,7 +41,7 @@ pages
 
 Yes, is that easy! If you want to create a dynamic url you need to define the dynamic part inside square brackets, and the name that you put in there is going to be added to the query object in your **getInitialProps** method.
 
-Ok let's create the components for each of our pages. - LINK A DAY 1
+Ok let's create the components for each of our pages. If you are not familiar with nextjs pages you can see [an introduction here](https://blog.eperedo.com/2019/06/16/learning-next-day-one/)
 
 ```jsx
 // pages/index.js
@@ -98,7 +98,7 @@ function Users() {
 export default Users;
 ```
 
-I am using an array of users to make code shorter, but you totally can fetch data from an API or wherever you want. - LINK A DAY 4
+I am using an array of users to make code shorter, but you totally can [fetch data from an API](https://blog.eperedo.com/2019/06/18/learning-next-day-two/) or wherever you want.
 
 And now our dynamic page
 
