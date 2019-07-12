@@ -1,3 +1,8 @@
+---
+title: Learning NextJs - Day 10
+date: 2019-07-11 21:00:00
+---
+
 So in the middle of my learning process the team of nextjs decided to make a huge release and I am going to cover 1 of the many really great features that they include in the last version:
 
 ### Dynamic Routes
