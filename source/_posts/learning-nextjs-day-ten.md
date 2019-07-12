@@ -160,7 +160,7 @@ pages
         profile.js
 ```
 
-now our ```query``` object will have two properties: **id** and **name**
+now our **query** object will have two properties: **id** and **name**
 
 ```jsx
 // /users/[id]/[name]/profile.js
