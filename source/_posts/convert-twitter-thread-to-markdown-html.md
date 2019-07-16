@@ -1,0 +1,6 @@
+- Create a new twitter app in https://developer.twitter.com
+- Create a Bearer token
+- Use the token to get the information of the tweet using the twitter api. Do not forget extenden mode
+- You need the Tweet ID of the final tweet in the whole thread and the username.
+- Using Twitter API you can know the previous tweet and repeat the process until the first tweet
+- Then convert the text to HTML, Markdown
