@@ -1,7 +1,7 @@
 
 ---
-title: Learning NextJs - Day 11 - Custom Error Pages
-date: 2019-07-11 21:00:00
+title: Learning NextJs - Day 11 Custom Error Pages
+date: 2019-07-28 16:10:00
 ---
 
 For this day I want to talk about how NextJs deal with Http Errors. The way to customize not only the design of the error page but also the actual status code sent to the clients.
