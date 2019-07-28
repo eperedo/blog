@@ -1,6 +1,6 @@
 
 ---
-title: Learning NextJs - Day 11: Custom Error Pages
+title: Learning NextJs - Day 11 - Custom Error Pages
 date: 2019-07-11 21:00:00
 ---
 
