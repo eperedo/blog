@@ -30,8 +30,8 @@ First you need to create a simple hapijs server.
 const Hapi = require("@hapi/hapi");
 
 const server = Hapi.Server({
-  HOST: process.env.HOST || "localhost",
-  PORT: process.env.PORT || 3000
+  host: process.env.HOST || "localhost",
+  port: process.env.PORT || 3000
 });
 
 (async () => {
@@ -59,8 +59,8 @@ const Hapi = require("@hapi/hapi");
 const app = next({ dev: true });
 
 const server = Hapi.Server({
-  HOST: process.env.HOST || "localhost",
-  PORT: process.env.PORT || 3000
+  host: process.env.HOST || "localhost",
+  port: process.env.PORT || 3000
 });
 
 (async () => {
