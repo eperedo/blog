@@ -43,4 +43,4 @@ importante es la propiedad **el** que acepta como valor cualquier selector CSS.
 </body>
 ```
 
-En este caso le estamos diciendo a Vue que controle todo lo que esté dentro **del div con id "my-app"**. Listo, ya tenemos nuestra instancia configurada correctamente y con ello nuestra primera aplicación basada en VueJs :fire:
+En este caso le estamos diciendo a Vue que controle todo lo que esté dentro **del div con id "my-app"**. Listo, ya tenemos nuestra instancia configurada correctamente y con ello nuestra primera aplicación basada en VueJs 🔥
