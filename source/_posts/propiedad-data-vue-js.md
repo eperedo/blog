@@ -1,6 +1,6 @@
 ---
 title: La propiedad data en vue js
-date: 2019-12-16 12:00:00
+date: 2019-12-16 17:00:00
 ---
 
 Ya generamos [una instancia en Vue.Js](https://blog.eperedo.com/2019/12/15/creando-una-instancia-en-vue-js/), pero nuestra aplicación realmente no hace
