@@ -22,10 +22,9 @@ const app = new Vue({
 ```
 
 Listo, ahora queremos que el valor de **title** se muestre en nuestro html, para eso
-vamos a hacer uso de la sintaxis de plantillas de Vue. Para mostrar variables definidas en **data** dentro del html tenemos que usar el simbolo de llaves "{{}}" y
-dentro de ellas el nombre de la variable
+vamos a hacer uso de la sintaxis de plantillas de Vue. Para mostrar variables definidas en **data** dentro del html tenemos que usar el simbolo de llaves y dentro de ellas el nombre de la variable
 
-```vue
+```
 {{ title }}
 ```
 
