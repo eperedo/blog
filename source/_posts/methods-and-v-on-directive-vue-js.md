@@ -1,5 +1,5 @@
 ---
-title: Métodos y v-on en Vue js
+title: Métodos y la directiva v-on en Vue js
 date: 2020-01-04 16:34:00
 ---
 
