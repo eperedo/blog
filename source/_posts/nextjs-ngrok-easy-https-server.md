@@ -1,6 +1,6 @@
 ---
 title: Easy https server with nextjs and ngrok
-date: 2019-07-28 16:10:00
+date: 2020-03-22 00:20:00
 ---
 
 So I had this app where you must share a link to other person and I remembered about the [web share API](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share). After a few lines of code I was able to have the feature almost ready, but then I realize this feature only works under an HTTPS connection.
