@@ -31,7 +31,7 @@ social_links:
 #   - post_count: whether to show only the x most recent posts.
 posts_overview:
   show_all_posts: false
-  post_count: 10
+  post_count: 50
 
 ##############################################################################
 # Look and Feel
