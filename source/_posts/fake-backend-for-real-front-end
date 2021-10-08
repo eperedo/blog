@@ -1,0 +1,7 @@
+When you are working in a new project or creating a new feature for your web application there's a big change that the backend is not ready.
+Of course your first reaction is starting all the tasks related to UI only so you can earn time while your backend team finish their work.
+
+But it's inevitable that you are going to face the situation where you need to work in the integration with the backend
+and it's just not ready. For those moments you in different ways:
+
+1. Just make th
