@@ -22,7 +22,8 @@ nav:
 # only 'mail' is an exception.
 social_links:
   github: https://github.com/eperedo
-  twitter: /eperedo
+  mastodon: https://mstdn.social/@wardo
+  twitter: https://twitter.com/eperedo
   mail: mailto:jrperedo@gmail.com
 
 # Customize the overview with the most recent blog posts on the index page.
