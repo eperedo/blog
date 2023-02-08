@@ -13,7 +13,6 @@ projects_url: https://github.com/eperedo
 # languages/*.yml
 nav:
   home: /
-  about: https://portfolio.eperedo.com
   articles: /archives/
 
 # Links to your social media accounts.
