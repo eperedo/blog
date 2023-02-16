@@ -48,10 +48,10 @@ export default defineComponent({
 });
 ```
 
-directus already provide [documentation for accessing the items of a collection](https://docs.directus.io/reference/items.html). For our example the url have the format:
+directus already provide [documentation for accessing the items of a collection](https://docs.directus.io/reference/items.html). For our example the url have the segments:
 
 - **/items** - because we're trying to get items of a collection
-- **/user** - because that's the name of the collection (can be anything you want)
+- **/user** - because that's the name of the collection (can be anything you want at the moment of creating it)
 - **?aggregate[count]=id&groupBy[]=country** - since we need the total of users per country this is similar to writing a sql query like this:
 
 ```sql
@@ -64,7 +64,7 @@ After all of this we're just logging the response to the console so we can check
 
 ![directus items response structure](https://user-images.githubusercontent.com/461124/219236551-3de6095a-e034-4514-b9b3-db26fe50b7b3.PNG)
 
-ok since directus use [axios](https://axios-http.com/docs/intro) under the hood it's a very familiar structure (at least for me an former axios fanboy) we have a **data** object and inside of it a **data** array that includes all the items from the **user** colecction group by country.
+ok since directus use [axios](https://axios-http.com/docs/intro) under the hood it's a very familiar structure (at least for me a former axios fanboy) we have a **data** object and inside of it a **data** array that includes all the items from the **user** colecction group by country.
 Let's back a little bit and remember what's the data structure that chartjs needs:
 
 ```js
@@ -226,6 +226,6 @@ That's it! Pretty simple to interact with the API and get information from a col
 </style>
 ```
 
-Would be great if the users of the admin could have the possibility of choosing a collection and not be restricted to just the user collection like in this demo, but that's in a future post.
+Would be great if the users of the admin could have the possibility of choosing a collection and not be restricted to just the user collection like in this demo, but that's for a future post.
 
 Hope this post help you!
