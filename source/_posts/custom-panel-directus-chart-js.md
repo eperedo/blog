@@ -16,6 +16,10 @@ Don't get me wrong here, chartjs does the job very well, but the directus team u
 
 Lucky for me directus allow you to create a custom panel, so the first thing to do of course is to setup a new directus environment.
 
+## TL;DR
+
+If you are already a directus expert you can clone the full [code of this post here](https://github.com/eperedo/directus-chartjs-panel/tree/post-01)
+
 ## Creating a fresh new directus project
 
 This is an easy step since [there's an official docker container](https://hub.docker.com/r/directus/directus). The only thing you need is create anywhere on your machine the following docker-compose config file.
@@ -242,3 +246,5 @@ And if we try to create a new panel we can see our changes
 ![](https://user-images.githubusercontent.com/461124/218868388-8dc5b3a0-3a03-49c2-bd00-717f2940087d.PNG)
 
 And that's it! In a real world application you don't want to use hardcode data so in a future post I will cover that part linking our custom panel to a collection through the UI.
+
+Full [code on github](https://github.com/eperedo/directus-chartjs-panel/tree/post-01)
