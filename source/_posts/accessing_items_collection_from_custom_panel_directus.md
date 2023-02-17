@@ -5,6 +5,10 @@ date: 2023-02-15 20:35:00
 
 In a [previous post](https://blog.eperedo.com/2023/02/14/custom-panel-directus-chart-js/) I showed you how to create a custom panel for your insights on Directus. Since it was a simple example I used hardcode data for the chart. Of course in a real application you can't use hardcode information even if you're really fast updating the content.
 
+## TL;DR
+
+If you are already a directus expert you can clone the full [code of this post here](https://github.com/eperedo/directus-chartjs-panel/tree/post-02)
+
 So let's update our custom extension to use data from a directus collections instead just hardcode data. Before starting let's run the **dev** command:
 
 ```bash
@@ -227,5 +231,7 @@ That's it! Pretty simple to interact with the API and get information from a col
 ```
 
 Would be great if the users of the admin could have the possibility of choosing a collection and not be restricted to just the user collection like in this demo, but that's for a future post.
+
+Full [code on github](https://github.com/eperedo/directus-chartjs-panel/tree/post-02)
 
 Hope this post help you!
