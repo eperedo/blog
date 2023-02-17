@@ -9,6 +9,8 @@ In a [previous post](https://blog.eperedo.com/2023/02/14/custom-panel-directus-c
 
 If you are already a directus expert you can clone the full [code of this post here](https://github.com/eperedo/directus-chartjs-panel/tree/post-02)
 
+## Running our dev command to compile our panel on every change
+
 So let's update our custom extension to use data from a directus collections instead just hardcode data. Before starting let's run the **dev** command:
 
 ```bash
