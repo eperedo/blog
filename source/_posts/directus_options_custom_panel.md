@@ -9,6 +9,10 @@ Continuing [with our custom panel](https://blog.eperedo.com/2023/02/16/accessing
 
 So in this post I'm going to implement something like that.
 
+## TL;DR
+
+If you are already a directus expert you can clone the full [code of this post here](https://github.com/eperedo/directus-chartjs-panel/tree/post-03)
+
 ## Defining your options
 
 Right now our custom panel is going to always show you a pie chart of all the users grouped by country.
@@ -227,5 +231,7 @@ And you can see the "Other..." button where we can add more colors
 We've seen how directus not just gives us great defaults but also how easy is to extend any feature with a few lines of code.
 
 I'm going to be covering different ways to extend directus and not just panels, but that's for a next post.
+
+Full [code on github](https://github.com/eperedo/directus-chartjs-panel/tree/post-03)
 
 Hope this helps!
