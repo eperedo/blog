@@ -11,7 +11,7 @@ So in this post I'm going to implement something like that.
 
 ## Defining your options
 
-Right now our custom panel is going to always show you a pie chart of all the users group by country.
+Right now our custom panel is going to always show you a pie chart of all the users grouped by country.
 If we want to make this panel a little more generic we need to include two options: one for selecting the collection (this is basically the table that contains all the data) and of course also we need to give the ability to select the group field so we don't leave the country field in hardcode like we have right now.
 
 ## Start our dev command
@@ -42,20 +42,17 @@ Knowing this we can add the dropdown as an option for our custom panel with the 
 ```ts
 export default definePanel({
   id: "chartjs-pie",
-  name: "ChartJs Pie",
-  icon: "pie_chart",
-  description: "A quick implementation of a pie with chartjs",
-  component: PanelComponent,
+  // rest of the config omitted for brevity
   options: [
     {
-      field: "collection",
+      field: "collectionName",
       name: "Collection",
       meta: {
         interface: "system-collection",
       },
     },
   ],
-  // rest of the config.
+  // rest of the config omitted for brevity
 });
 ```
 
@@ -65,7 +62,7 @@ let's explain all the attributes:
 
 - **name:** this is the label every user will read above the dropdown.
 
-- **meta.interface:** the interface represent the UI you want to render. **system-collection** is a built it directus component that already deals with the process of getting all the collections and showing them in a dropdown.
+- **meta.interface:** the interface represent the UI you want to render. **system-collection** is a built in directus component that already deals with the process of getting all the collections and showing them in a dropdown.
 
 ok this is going to show the dropdown with all the collections, but now we need to write the code to receive the value and use it in our **panel.vue**.
 
@@ -156,7 +153,7 @@ The rest of the process is the same we need to bind our new option to a prop in 
   },
 ```
 
-The groupField variable is a string in our props and we're changing the url to use the **groupField** variable for the **groupBy** segment.
+The groupField prop is a string and we're changing the url to use the **groupField** variable for the **groupBy** segment.
 Another minor change was the value that is being pushed to the labels array. It was the **country** attribute but since that value is dynamic now is being referenced to the prop **groupField** as well.
 
 Now if we open our custom panel we can see both dropdowns and the second is being filled with all the values related to the collection selected.
@@ -173,6 +170,7 @@ Since a chart can have many colors we're going to use the **select-multiple-drop
 The first step is adding to the options array:
 
 ```ts
+    // rest of the config omitted for brevity
     {
       field: "colors",
       name: "Select colors",
@@ -192,7 +190,7 @@ The first step is adding to the options array:
 
 You already know the **field** and **name** attributes so let's cover the new ones:
 
-- **options.choices:** an array of objects with the default values of our dropdown. The structure of the object always must include a **text** and a **value**. The first is the one that the user see and the **value** is the one you get your vue component as a prop.
+- **options.choices:** an array of objects with the default values of our dropdown. The structure of the object always must include a **text** and a **value**. The first is the one that the user see and the **value** is the one you get in the vue component as a prop.
 
 - **options.allowOther:** we don't want to limit our users to basic colors so this attribute is going to give that flexibility so everyone can add their favorite color.
 
